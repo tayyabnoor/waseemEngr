@@ -233,3 +233,17 @@
   new PureCounter();
 
 })()
+
+var linkedInFollowers = 20000;
+var twitterFollowers = 1600;
+var newsLetterSubscribers = 3000;
+var sessionsDelivered = 5;
+
+//Set values for the counters on load and update value on load
+window.onload = function() {
+  document.getElementById("linkedInFollowers").innerHTML = linkedInFollowers;
+  document.getElementById("twitterFollowers").innerHTML = twitterFollowers;
+  document.getElementById("newsLetterSubscribers").innerHTML = newsLetterSubscribers;
+  document.getElementById("sessionsDelivered").innerHTML = sessionsDelivered;
+}
+
