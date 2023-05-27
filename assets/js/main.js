@@ -280,7 +280,7 @@
 
 })()
 
-var linkedInFollowers = 20000;
+var linkedInFollowers = 2000;
 var twitterFollowers = 1600;
 var newsLetterSubscribers = 3000;
 var sessionsDelivered = 5;
