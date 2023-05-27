@@ -227,6 +227,9 @@ a:hover {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials .ico-circle:hover {
@@ -632,6 +635,25 @@ a:hover {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 992px) {
+
+  /* header */
+  #header .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .navbar > ul > li {
+    padding: 10px 0 10px 22px;
+  }
+
+  
+
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -766,6 +788,20 @@ a:hover {
   font-size: 3rem;
 }
 
+@media (max-width:992px) {
+  .mw_md_pt_65 {
+    padding-top:65px;
+  }
+
+  .mw_md_height_25 {
+    height:25vw;
+  }
+
+  .hero .overlay-itro {
+    height:105%;
+  }
+}
+
 @media (min-width: 768px) {
   .hero .hero-title {
     font-size: 2.5rem;
@@ -876,6 +912,7 @@ a:hover {
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  min-height:500px;
 }
 
 .service-box:hover .ico-circle {
@@ -911,6 +948,10 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
+}
+
+.service-content {
+  flex:auto;
 }
 
 /*--------------------------------------------------------------
@@ -1236,7 +1277,7 @@ a:hover {
 --------------------------------------------------------------*/
 @media (min-width: 767px) {
   .card-blog {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -1261,7 +1302,6 @@ a:hover {
   overflow: hidden;
   background-color: #0078ff;
   border-radius: 4px;
-  display: none; /* not required */
 }
 
 .card-blog .card-category .category {
@@ -1280,6 +1320,11 @@ a:hover {
 
 .card-blog .card-description {
   color: #4e4e4e;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-blog .post-author {
@@ -1301,6 +1346,10 @@ a:hover {
 
 .card_newletter .card-img {
   width:30%;
+}
+
+.news_letter {
+  padding: 0 40px;
 }
 
 /*--------------------------------------------------------------
@@ -1473,6 +1522,17 @@ a:hover {
 .use-theme-bg {
   background: transparent;
 }
+
+/* News letter slider */
+.news_letter .swiper-button-prev { 
+  left: 0;
+}
+
+.news_letter .swiper-button-next {
+  right: 0;
+}
+
+/* News letter slider */
 
 /*--------------------------------------------------------------
 # Footer
