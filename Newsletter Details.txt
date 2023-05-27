@@ -1,77 +1,135 @@
 Page p 3 post dikhan dena aur baqi slider laga dena ke wo next ya back press kar sakain
 
+EP 14 : 7 Awesome Features of C# (10)
+Read Time : 4 Mins
+MAY 27,2023
+https://mwaseemzakir.substack.com/p/ep-14-7-awesome-features-of-c-10
+Lambda expressions are used to create anonymous functions , 
+I love to use them for simple getter/setters e.g. GetFullName , Get Address etc. 
+But lambdas have limitations with var types which were entertained in C# 10.
 
 EP 13 : Introduction to Bogus - A Fake Data Generation Library
 Read Time : 3 mins
 MAY 20, 2023
 https://mwaseemzakir.substack.com/p/ep-13-introduction-to-bogus-a-fake
+While working with our applications we need to generate fake data for different purposes.
+For testing purpose (especially unit testing),for demonstration of data maybe for charts/graphs
+Dumping the data in databases
 
 EP 12 : How to implement global exception handling in .NET Core
 Read Time : 3 Mins
 MAY 13, 2023	
 https://mwaseemzakir.substack.com/p/ep-12-how-to-implement-global-exception
+We often come up with exceptions in our application and we have two ways in general to handle 
+those exception.Handle at controller/service level everywhere in application
+Handle from one place and control the application
 
 EP 11 : Default vs Autofac Dependency Injection Container in .NET Core 6.0
 Read time : 3 Mins
 MAY 06,2023
+Dependency injection involves providing a class with its required dependencies 
+from an external source rather than having the class create them itself.
+This helps to decouple the object creation process from the caller, 
+leading to a more modular and flexible system.
 
 EP 10 : Action Filters in .NET Core
 Read time : 3 Mins
 APR 29,2023
 https://mwaseemzakir.substack.com/p/episode-10-action-filters-in-net
+Filters gives us the facility to run a piece of code before or after any stage in 
+request processing pipeline. You are already familiar with filters , 
+let me remind you , you would have used authorization (attribute Authorized) 
+it basically applies filter on your actions and checks is it authorized or not so that is a filter.
 
 EP 9 : Play with JSON in .NET via System.Text.Json Library
 Read Time : 3 Mins
 APR 22,2023
 https://mwaseemzakir.substack.com/p/episode-9-play-with-json-in-net-via
+We have multiple formats to represent data but JSON has got the big fan following , 
+it is extensively used for sending-receiving data in applications. 
+It is easy to read and flexible , but to work our application properly we need something 
+that can convert the data into forms which are easy to understand by us and compatible 
+with our data models. That’s where JSON handlers come.
 
 
 EP 8: Magic of HTTP Client Class in C#
 Read Time : 3 Mins
 APR 15, 2023
 https://mwaseemzakir.substack.com/p/episode-8-magic-of-http-client-class
+HttpClient is a class in C# that is used for making HTTP calls of different
+ kinds (most commonly Get/Put/Delete/Post) This class comes from System.Net.Http namespace
 
 EP 7 : Raw SQL Commands in EF Core
 Read Time : 3 Mins
 APR 08, 2023
 https://mwaseemzakir.substack.com/p/episode-7-raw-sql-commands-in-ef
+We can use EF Core methods to retrieve/update data from database. By using them we can
+Call Store Procedure,Write SQL Queries in LINQ,Combine SQL Query and LINQ
+
 
 
 EP 6 : Mapster in .NET Core for Mappings
 Read time : 5 Mins
 APR 1, 2023
 https://mwaseemzakir.substack.com/p/episode-6-mapster-in-net-core-for
+While working with .NET we often need to convert the different objects 
+(Database objects to DTO’s/Models or vice versa). That’s where mappers come in action.
+In the world of mapping we have multiple libraries but these two has got big following and usage.
+Automapper (395M Downloads)
+Mapster (12M Downloads)
 
 EP 5 : Single vs Split Query in Entity Framework Core
 Read time : 5 Mins
 MAR 18, 2023
 https://mwaseemzakir.substack.com/p/episode-5-single-vs-split-query-in
+Single Queries and their Problems
+
+By default while working with LINQ queries in EF queries are treated as an 
+single queries unless we define. 
+Let’s try to understand it with an example.
 
 EP 4 : Default Interface Methods in C# 8.0
 Read time : 3 Mins
 MAR 11, 2023
 https://mwaseemzakir.substack.com/p/episode-4-default-interface-methods
+We have been using the interfaces for years and 
+we know that interfaces are just contracts and class that inherits 
+them must implement all methods of interface.
+Suppose this Interface is being implemented by multiple classes 
+and now you want to add some more methods in that interface.
+
 
 
 EP 3 : Schedule Jobs with Quartz.NET
 Read time : 5 Mins
 MAR 4, 2023
 https://mwaseemzakir.substack.com/p/episode-3-schedule-jobs-with-quartznet
+There are many ways to schedule background jobs, but two are particularly well-known. Quartz 
+and Hangfire. I talked about Hangfire in a recent LinkedIn post. Today we are going to learn about Quartz.
+Quartz.NET is used for scheduling jobs with some additional features over Hangfire. CRON triggers, calendar events, and simple events are all supported.
 
 
 EP 2 : Tips to write better LINQ Queries
 Read time : 5 Mins
 FEB 25, 2023
 https://mwaseemzakir.substack.com/p/episode-2-tips-to-write-better-linq
+For read only queries e.g. (GetAll,GetById etc.) use AsNoTracking , 
+when we use it entities are not tracked for change so it brings data more speedily.
 
 EP 1 : Logging in ASP .NET Core With NLog
 Read time : 3 Mins
 FEB 18, 2023
 https://mwaseemzakir.substack.com/p/episode-1-logging-in-asp-net-core
+Logging is most important part of development , for figuring out the issues we 
+need to add logging in our application especially if issue is occurring at production.
+We have multiple options available for logging but two options are most popular , 
+one of them is NLog and other one is Serilog.
 
 
 EP 0: How to set environment variable ?
 Read time : 2 Mins
 FEB 11, 2023
 https://mwaseemzakir.substack.com/p/episode-0-how-to-set-environment
-
+This file is automatically created after you create project and it can be 
+found in properties section of your project , it contains configurations to launch settings for IIS. It contains SSL port , application URL and launch URL of your project , 
+by default launch URL used to contain weatherforecast but now you would see swagger in it.
