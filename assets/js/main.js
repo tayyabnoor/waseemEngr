@@ -215,6 +215,55 @@
   });
 
   /**
+   * news letter  details slider
+   */
+
+  const swiper = new Swiper('.news_letter', {
+    // Optional parameters
+    // direction: 'vertical',
+    slidesPerView: 3,
+    //spaceBetween: 30,
+    speed: 400,
+    loop: true,
+    // reverseDirection: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+  
+
+  /**
    * Preloader
    */
   let preloader = select('#preloader');
@@ -239,6 +288,7 @@ var sessionsDelivered = 5;
 //Set values for the counters on load and update value on load
 window.onload = function() {
   document.getElementById("linkedInFollowers").innerHTML = linkedInFollowers;
+  document.getElementById("linkedInFollowers_1").innerHTML = linkedInFollowers;
   document.getElementById("twitterFollowers").innerHTML = twitterFollowers;
   document.getElementById("newsLetterSubscribers").innerHTML = newsLetterSubscribers;
   document.getElementById("sessionsDelivered").innerHTML = sessionsDelivered;
