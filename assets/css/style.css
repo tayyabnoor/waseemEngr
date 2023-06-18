@@ -59,6 +59,10 @@ a:hover {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
+.card-blog {
+  min-height:290px;
+}
+
 .box-shadow-a,
 .button:hover {
   text-decoration: none;
@@ -156,7 +160,7 @@ a:hover {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .subtitle-a {
@@ -229,11 +233,15 @@ a:hover {
   .socials ul li {
     margin-bottom:20px
   }
+  .socials .ico-circle {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   font-size: 1.2rem;
   border-radius: 50%;
   line-height: 1.6;
@@ -244,6 +252,14 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and ( max-width : 575px) {
+  .socials .ico-circle {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 
 .socials .ico-circle:hover {
   background-color: #0078ff;
