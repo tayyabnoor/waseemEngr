@@ -224,7 +224,7 @@
     slidesPerView: 3,
     //spaceBetween: 30,
     speed: 400,
-    loop: true,
+    loop: false,
     // reverseDirection: true,
   
     // If we need pagination
@@ -242,9 +242,13 @@
     },
 
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
       640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 40,
       },
       768: {
         slidesPerView: 2,
